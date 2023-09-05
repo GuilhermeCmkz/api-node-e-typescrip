@@ -1,10 +1,10 @@
 import express from 'express';
 
-
 const server = express();
 
-server.get('/', (req, res) => {
-    return res.send('Olá, DEV!');
+
+server.get('/', (_, res) => {
+  return res.send('Olá, DEV!');
 });
 
 export { server };
